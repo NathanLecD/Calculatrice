@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (dark) {
       // La calculatrice est en mode sombre, réinitialise l'affichage à zéro
       display.value = "";
+      return; //si on appuye sur le bouton rien ne se passe
     }
 
     // Convertit la valeur actuelle en hexadécimal
@@ -168,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (dark) {
       // La calculatrice est en mode sombre, réinitialise l'affichage à zéro
       display.value = "";
+      return; //si on appuye sur le bouton rien ne se passe
     }
 
     // Convertit la valeur actuelle en décimal
