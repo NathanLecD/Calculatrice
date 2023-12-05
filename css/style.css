@@ -113,6 +113,7 @@ button:hover {
   width: 30px;
   position: absolute;
   top: 50%;
+  background-color: white;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-image: url("https://cdn-icons-png.flaticon.com/512/500/500146.png");
@@ -163,7 +164,6 @@ button:hover {
   border-radius: 50%;
 }
 
-/* Style du cercle derrière le bouton thème */
 .thbhex::before {
   content: "";
   height: 30px;
@@ -185,7 +185,6 @@ button:hover {
   border-radius: 50%;
 }
 
-/* Style du cercle derrière le bouton thème */
 .thbdec::before {
   content: "";
   height: 30px;

@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (event.key === "Escape") {
       // Bascule entre le mode sombre et le mode clair lors de l'appui sur la touche "Escape"
       toggleDarkMode();
+    } else if (event.key === "&") {
+      toggleHexMode();
+    } else if (event.key === "é") {
+      toggleDecMode();
     } else {
       // Appelle la fonction "clavier" pour gérer les autres touches
       clavier(event.key);
@@ -55,7 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // Évalue l'expression mathématique
       try {
         if (display.value !== "") {
-          display.value = eval(display.value.replace(/,/g, "."));
+          // Vérifie la division par zéro
+          if (display.value.includes("/0")) {
+            display.value = "";
+          } else {
+            display.value = eval(display.value.replace(/,/g, "."));
+          }
         }
       } catch (error) {
         display.value = "Erreur";
