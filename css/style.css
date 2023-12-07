@@ -33,6 +33,7 @@ body {
   background-color: white;
   box-shadow: 0 0 60px black;
   position: relative;
+  text-align: center;
 }
 
 /* Style de l'input numérique */
@@ -109,15 +110,18 @@ button:hover {
 /* Style du cercle derrière le bouton thème */
 .thb::before {
   content: "";
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   top: 50%;
   background-color: white;
+  z-index: -1;
+  padding: 1px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-image: url("https://cdn-icons-png.flaticon.com/512/500/500146.png");
   background-size: 30px;
+  background-position: center;
 }
 
 /* Style pour le mode sombre de la calculatrice */

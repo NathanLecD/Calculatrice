@@ -78,8 +78,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (value === "×") {
       // Utilise le texte brut pour la multiplication
       display.value += "*";
-    } else if (value === "+/-") {
+    } else if (value === "±") {
       // Change le signe du nombre affiché
+      display.value += "+/*";
       if (display.value !== "") {
         display.value = parseFloat(display.value) * -1;
       }
