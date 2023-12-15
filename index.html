@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <title>Calculatrice</title>
-  </head>
 
-  <body>
-    <div class="box">
-      <div class="calculatrice dark off">
-        <div class="thb actif fond">
-          <i class="icon"></i>
-        </div>
-        <div class="thbhex actif">
-          <i class="hex"> </i>
-        </div>
-        <div class="thbdec actif">
-          <i class="dec"> </i>
-        </div>
-        <input type="text" name="boxinput" placeholder="0" readonly />
-        <div>
-          <button class="button operation1">AC</button>
-          <button class="button operation1">&plusmn;</button>
-          <button class="button operation1">%</button>
-          <button class="button operation">&divide;</button>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Calculatrice</title>
+</head>
 
-        <div>
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button operation">&times;</button>
-        </div>
+<body>
+  <div class="box">
+    <div class="calculatrice dark off">
+      <div class="thb actif fond">
+        <i class="icon"></i>
+      </div>
+      <div class="thbhex actif">
+        <i class="hex"> </i>
+      </div>
+      <div class="thbdec actif">
+        <i class="dec"> </i>
+      </div>
+      <input type="text" name="boxinput" placeholder="0" readonly>
+      <div>
+        <button class="button operation1">AC</button>
+        <button class="button operation1">&plusmn;</button>
+        <button class="button operation1">%</button>
+        <button class="button operation">&divide;</button>
+      </div>
 
-        <div>
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button operation">-</button>
-        </div>
+      <div>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operation">&times;</button>
+      </div>
 
-        <div>
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button operation">+</button>
-        </div>
+      <div>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operation">-</button>
+      </div>
 
-        <div>
-          <button class="button zero">0</button>
-          <button class="button">,</button>
-          <button class="button operation">=</button>
-        </div>
+      <div>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operation">+</button>
+      </div>
+
+      <div>
+        <button class="button zero">0</button>
+        <button class="button">,</button>
+        <button class="button operation">=</button>
       </div>
     </div>
-    <script src="./js/script.js"></script>
-  </body>
+  </div>
+  <script src="./js/script.js"></script>
+  <div class="pied">
+    <p>"&" = Hexadécimale, "é" = Décimale, "Esc" = Power, "Backspace" = supprimer le dernier chiffre, "Delete" = AC, "Clavier numérique" = nombres et opérations</p>
+  </div>
+  
+</body>
+
 </html>

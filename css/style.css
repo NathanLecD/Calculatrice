@@ -1,4 +1,4 @@
-/* Style de base pour le corps de la page */
+/* Style corps page */
 body {
   width: 100%;
   margin: 0;
@@ -6,20 +6,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(79, 51, 176, 1),
-    rgba(210, 53, 165)
-  );
+  background-image: linear-gradient(to bottom right,
+      rgba(79, 51, 176, 1),
+      rgba(210, 53, 165));
   background-size: cover;
   height: 100vh;
   font-family: sans-serif;
 }
 
-/* Style global pour tous les éléments */
+/* Style global */
 * {
   box-sizing: border-box;
-  transition: all 4s ease; /* Animation globale avec une durée de 3 secondes */
+  transition: all 4s ease;
+  /* dure de la transition on off */
 }
 
 /* Style de la calculatrice */
@@ -36,7 +35,7 @@ body {
   text-align: center;
 }
 
-/* Style de l'input numérique */
+/* Style input */
 input {
   width: 320px;
   border: none;
@@ -52,17 +51,17 @@ input {
   overflow-x: auto;
 }
 
-/* Style pour le texte de l'input */
+/* Style texte input */
 .calculatrice input {
   color: black;
 }
 
-/* Style pour le placeholder de l'input */
+/* Style placeholder input */
 input::placeholder {
   color: black;
 }
 
-/* Style des boutons de la calculatrice */
+/* Style des boutons calculatrice */
 button {
   border: none;
   width: 60px;
@@ -73,31 +72,32 @@ button {
   color: white;
   font-size: 20px;
   cursor: pointer;
-  transition: all 200ms ease; /* Animation de 200 millisecondes avec un effet d'aise au survol */
+  transition: all 200ms ease;
+  /* Animation au survol des butons 200milisecondes */
 }
 
-/* Animation de survol sur les boutons */
+/* Animation de survol boutons */
 button:hover {
   transform: scale(1.1);
 }
 
-/* Style particulier pour le bouton "0" */
+/* Style particulier pour le bouton 0 */
 .zero {
   width: 144px;
   border-radius: 50px;
 }
 
-/* Style des opérations arithmétiques */
+/* Style buttons operation */
 .operation {
   background-color: #ff8c00;
 }
 
-/* Style pour une autre catégorie d'opérations */
+/* Style buttons operation1 */
 .operation1 {
   background-color: #696969;
 }
 
-/* Style du bouton thème */
+/* Style du bouton thème blanc */
 .thb {
   position: absolute;
   top: 30px;
@@ -107,7 +107,7 @@ button:hover {
   border-radius: 50%;
 }
 
-/* Style du cercle derrière le bouton thème */
+/* Style du bouton on off */
 .thb::before {
   content: "";
   height: 25px;
@@ -129,15 +129,10 @@ button:hover {
   background-color: #071115;
 }
 
-/* Style pour le texte de l'input en mode sombre */
-.calculatrice.dark input {
-  color: white;
-}
-
-/* Style pour le placeholder de l'input en mode sombre */
+/* Style pour 0 de l'input en mode sombre */
 .calculatrice.dark input::placeholder {
-  color: white;
-  opacity: 0; /* Rend le placeholder complètement transparent */
+  opacity: 0;
+  /* Rend le 0 transparent */
 }
 
 /* Style pour les boutons en mode sombre */
@@ -146,19 +141,19 @@ button:hover {
   color: white;
 }
 
-/* Style pour une autre catégorie d'opérations en mode sombre */
+/* Style buttons operation1 en mode sombre */
 .calculatrice.dark button.operation1 {
   background-color: #4b0082;
   color: white;
 }
 
-/* Style pour les opérations arithmétiques en mode sombre */
+/* Style buttons operation en mode sombre */
 .calculatrice.dark button.operation {
   background-color: #000080;
   color: white;
 }
 
-/*Bouton Hexadecimale*/
+/* Bouton Hexadécimale */
 .thbhex {
   position: absolute;
   top: 30px;
@@ -168,6 +163,7 @@ button:hover {
   border-radius: 50%;
 }
 
+/* Bouton hexadécimale */
 .thbhex::before {
   content: "";
   height: 30px;
@@ -175,11 +171,11 @@ button:hover {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
   background-image: url("https://static.thenounproject.com/png/3976693-200.png");
   background-size: 30px;
 }
-/*Bouton decimal */
+
+/* Bouton décimal */
 .thbdec {
   position: absolute;
   top: 30px;
@@ -189,6 +185,7 @@ button:hover {
   border-radius: 50%;
 }
 
+/* Bouton décimal */
 .thbdec::before {
   content: "";
   height: 30px;
@@ -200,4 +197,8 @@ button:hover {
   background-image: url("https://cdn.icon-icons.com/icons2/2248/PNG/512/decimal_increase_icon_137693.png");
   background-size: 30px;
 }
-/* Ajoutez vos autres styles spécifiques au mode hexadécimal ici */
+.pied {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+}
