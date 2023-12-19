@@ -98,7 +98,7 @@ button:hover {
 }
 
 /* Style du bouton thème blanc */
-.thb {
+.power {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -108,7 +108,7 @@ button:hover {
 }
 
 /* Style du bouton on off */
-.thb::before {
+.power::before {
   content: "";
   height: 25px;
   width: 25px;
@@ -154,7 +154,7 @@ button:hover {
 }
 
 /* Bouton Hexadécimale */
-.thbhex {
+.calhex {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -164,7 +164,7 @@ button:hover {
 }
 
 /* Bouton hexadécimale */
-.thbhex::before {
+.calhex::before {
   content: "";
   height: 30px;
   width: 30px;
@@ -176,7 +176,7 @@ button:hover {
 }
 
 /* Bouton décimal */
-.thbdec {
+.caldec {
   position: absolute;
   top: 30px;
   left: 60px;
@@ -186,7 +186,7 @@ button:hover {
 }
 
 /* Bouton décimal */
-.thbdec::before {
+.caldec::before {
   content: "";
   height: 30px;
   width: 30px;

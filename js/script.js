@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let dark = true;
 
     // Sélectionne des éléments supplémentaires du DOM
-    const thba = document.querySelector(".thb");
+    const power = document.querySelector(".power");
     const calculatrice = document.querySelector(".calculatrice");
-    const thbhex = document.querySelector(".thbhex");
-    const thbdec = document.querySelector(".thbdec");
+    const calhex = document.querySelector(".calhex");
+    const caldec = document.querySelector(".caldec");
 
     /**
      * Fonction pour gérer les clics sur les boutons
@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // Ajoute ou supprime la classe "dark" à l'élément de la calculatrice
         calculatrice.classList.toggle("dark");
 
-        // Ajoute ou supprime la classe "actif" à l'élément avec la classe "thb"
-        thba.classList.toggle("actif");
+        // Ajoute ou supprime la classe "actif" à l'élément avec la classe "power"
+        power.classList.toggle("actif");
 
         // Inverse la valeur de la variable dark
         dark = !dark;
@@ -206,18 +206,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Gère le clic sur l'élément avec la classe "thb"
-    thba.addEventListener("click", function Darkmode() {
+    // Gère le clic sur l'élément avec la classe "power"
+    power.addEventListener("click", function Darkmode() {
         toggleDarkMode();
     });
 
-    // Gère le clic sur l'élément avec la classe "thbhex"
-    thbhex.addEventListener("click", function HexMode() {
+    // Gère le clic sur l'élément avec la classe "calhex"
+    calhex.addEventListener("click", function HexMode() {
         toggleHexMode();
     });
 
-    // Gère le clic sur l'élément avec la classe "thbdec"
-    thbdec.addEventListener("click", function DecMode() {
+    // Gère le clic sur l'élément avec la classe "caldec"
+    caldec.addEventListener("click", function DecMode() {
         toggleDecMode();
     });
 });
